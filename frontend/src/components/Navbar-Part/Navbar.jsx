@@ -1,14 +1,17 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { IoSearch } from "react-icons/io5";
 import { CiUser } from "react-icons/ci";
 import { IoBagOutline } from "react-icons/io5";
 import { FaBars } from "react-icons/fa";
 import { MdArrowBackIosNew } from "react-icons/md";
+import { ShopContext } from '../../context/ShopContext';
 
 const Navbar = () => {
 
     const [visible, setVisible] = useState(false)
+
+    const {setShowSearch} = useContext(ShopContext)
 
   return (
     <>
@@ -47,7 +50,7 @@ const Navbar = () => {
                  {/* ****************icon************ */}
                  <div>
                     <div className='flex items-center gap-4 text-[23px] font-bold'>
-                        <IoSearch className='' />
+                        <IoSearch onClick={()=>setShowSearch(true)} className='' />
                         <div className='group relative'>
                             <CiUser />
                             <div className='group-hover:block hidden absolute dropdown-menu right-0 pt-5'>
