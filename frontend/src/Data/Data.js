@@ -23,6 +23,11 @@ import prdImg23 from "../assets/images/img-23.jpg"
 import prdImg24 from "../assets/images/img-24.jpg"
 import prdImg25 from "../assets/images/img-25.jpg"
 import prdImg26 from "../assets/images/img-26.jpg"
+import prdImg27 from "../assets/images/img-12_1.jpg"
+import prdImg28 from "../assets/images/img-12_2.jpg"
+import prdImg29 from "../assets/images/img-12_3.jpg"
+
+
 
 
 
@@ -34,7 +39,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         name: "Women Round Neck Cotton Top",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis.",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis. Recusandae cumque necessitatibus, blanditiis, ipsa autem quae, cupiditate corporis fuga repellat enim tempore nisi. In provident rem optio porro nulla,",
         price: 200,
         image: prdImg1,
         category: "Men",
@@ -46,7 +51,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         name: "Women's Shirt Dress",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis.",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis. Recusandae cumque necessitatibus, blanditiis, ipsa autem quae, cupiditate corporis fuga repellat enim tempore nisi. In provident rem optio porro nulla,",
         price: 100,
         image: prdImg2,
         category: "Men",
@@ -58,7 +63,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         name: "Men's Shirt Dress",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis.",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis. Recusandae cumque necessitatibus, blanditiis, ipsa autem quae, cupiditate corporis fuga repellat enim tempore nisi. In provident rem optio porro nulla,",
         price: 600,
         image: prdImg3,
         category: "Men",
@@ -70,7 +75,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         name: "Men's Shirt Dress",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis.",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis. Recusandae cumque necessitatibus, blanditiis, ipsa autem quae, cupiditate corporis fuga repellat enim tempore nisi. In provident rem optio porro nulla,",
         price: 50,
         image: prdImg10,
         category: "kids",
@@ -82,7 +87,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         name: "Men's Shirt Dress",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis.",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis. Recusandae cumque necessitatibus, blanditiis, ipsa autem quae, cupiditate corporis fuga repellat enim tempore nisi. In provident rem optio porro nulla,",
         price: 100,
         image: prdImg11,
         category: "Kids",
@@ -94,7 +99,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         name: "Women Round Neck Cotton Top",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis.",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis. Recusandae cumque necessitatibus, blanditiis, ipsa autem quae, cupiditate corporis fuga repellat enim tempore nisi. In provident rem optio porro nulla,",
         price: 400,
         image: prdImg12,
         category: "Kids",
@@ -106,7 +111,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         name: "Women Round Neck Cotton Top",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis.",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis. Recusandae cumque necessitatibus, blanditiis, ipsa autem quae, cupiditate corporis fuga repellat enim tempore nisi. In provident rem optio porro nulla,",
         price: 700,
         image: prdImg13,
         category: "Kids",
@@ -118,7 +123,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         name: "Women Round Neck Cotton Top",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis.",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis. Recusandae cumque necessitatibus, blanditiis, ipsa autem quae, cupiditate corporis fuga repellat enim tempore nisi. In provident rem optio porro nulla,",
         price: 10,
         image: prdImg14,
         category: "Kids",
@@ -130,7 +135,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         name: "Women Round Neck Cotton Top",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis.",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis. Recusandae cumque necessitatibus, blanditiis, ipsa autem quae, cupiditate corporis fuga repellat enim tempore nisi. In provident rem optio porro nulla,",
         price: 200,
         image: prdImg15,
         category: "Women",
@@ -142,7 +147,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         name: "Women Round Neck Cotton Top",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis.",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis. Recusandae cumque necessitatibus, blanditiis, ipsa autem quae, cupiditate corporis fuga repellat enim tempore nisi. In provident rem optio porro nulla,",
         price: 600,
         image: prdImg16,
         category: "Men",
@@ -154,7 +159,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         name: "Women Round Neck Cotton Top",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis.",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis. Recusandae cumque necessitatibus, blanditiis, ipsa autem quae, cupiditate corporis fuga repellat enim tempore nisi. In provident rem optio porro nulla,",
         price: 100,
         image: prdImg17,
         category: "Women",
@@ -166,7 +171,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         name: "Women Round Neck Cotton Top",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis.",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis. Recusandae cumque necessitatibus, blanditiis, ipsa autem quae, cupiditate corporis fuga repellat enim tempore nisi. In provident rem optio porro nulla,",
         price: 100,
         image: prdImg18,
         category: "Kids",
@@ -178,7 +183,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         name: "Women Round Neck Cotton Top",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis.",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis. Recusandae cumque necessitatibus, blanditiis, ipsa autem quae, cupiditate corporis fuga repellat enim tempore nisi. In provident rem optio porro nulla,",
         price: 100,
         image: prdImg19,
         category: "Men",
@@ -190,7 +195,7 @@ export const products = [
     {
         id: crypto.randomUUID(),
         name: "Women Round Neck Cotton Top",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis.",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, reiciendis. Recusandae cumque necessitatibus, blanditiis, ipsa autem quae, cupiditate corporis fuga repellat enim tempore nisi. In provident rem optio porro nulla,",
         price: 100,
         image: prdImg20,
         category: "Kids",
@@ -271,4 +276,6 @@ export const products = [
         date: 1716634345448,
         bestseller: true,
     },
+     
 ]
+
