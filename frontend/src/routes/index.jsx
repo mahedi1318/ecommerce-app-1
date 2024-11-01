@@ -11,6 +11,7 @@ import Ordesr from '../pages/Ordesr'
 import PlaceOrder from '../pages/PlaceOrder'
 import Product from '../pages/Product'
 
+
 const router = createBrowserRouter(createRoutesFromElements(
     <Route path='/' element={<Root/>}>
         <Route index element={<Home/>}></Route>

@@ -3,11 +3,12 @@ import { useParams } from 'react-router-dom'
 import { ShopContext } from '../context/ShopContext'
 import { FaStar } from "react-icons/fa6";
 import { IoIosStarOutline } from "react-icons/io";
+import RelatedProducts from '../components/RelatedProducts-part/RelatedProducts';
 
 const Product = () => {
 
   const {productId} = useParams()
-  const {products, currency} = useContext(ShopContext) 
+  const {products, currency, addToCart} = useContext(ShopContext) 
   const [productData, setProductData] = useState(false)
   const [image, setImage] = useState('')
   const [size, setSize] = useState('')
@@ -59,7 +60,7 @@ const Product = () => {
                 ))}
               </div>
             </div>
-            <button className='josefin_sans text-[14px] font-normal px-8 py-3 bg-black text-white rounded-md active:bg-gray-500'>ADD TO CART</button>
+            <button onClick={()=>addToCart(productData.id,size)} className='josefin_sans text-[14px] font-normal px-8 py-3 bg-black text-white rounded-md active:bg-gray-500'>ADD TO CART</button>
             <hr className='mt-8 sm:w-4/5'/>
             <div className='josefin_sans text-[15px] font-normal text-gray-400 flex flex-col gap-1 mt-6'>
               <p>100% Original product.</p>
@@ -67,6 +68,26 @@ const Product = () => {
               <p>Easy return and exchange policy within 7 days.</p>
             </div>
           </div>          
+        </div>
+        {/* ------------------Description & Review Section--------------------- */}
+        <div className="mt-[60px]">
+          <div className="flex">
+            <b className='josefin_sans text-[18px] border px-5 py-2  '>Description</b>
+            <p className='josefin_sans text-[18px] font-normal border px-5 py-2  '>Reviews (122)</p>
+          </div>
+          <div className="border px-6 py-6 gap-5 flex flex-col">
+            <p className='josefin_sans text-[16px] font-normal text-gray-500'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, vel delectus. Quisquam ea nam provident, maxime excepturi perspiciatis
+               libero necessitatibus, molestias consequuntur exercitationem laudantium nihil numquam similique, recusandae corporis? Nobis, ad error 
+               unde qui voluptatibus, officiis laborum delectus maxime dolore quidem corporis quibusdam odio deserunt sunt consequatur tenetur blanditiis dolorum facilis minus quas.
+               Dignissimos iusto delectus magnam, voluptatibus, repellat voluptas ipsa eum nihil quis totam corrupti consectetur nesciunt odit vitae.</p>
+            <p className='josefin_sans text-[16px] font-normal text-gray-500'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut eos sint dolorum! Optio obcaecati necessitatibus, 
+              blanditiis maxime in voluptatum dignissimos? Cum animi commodi rerum cupiditate maxime maiores nam? Modi id eveniet 
+              quasi enim corporis quia quisquam explicabo repellendus impedit ducimus!</p>
+          </div>
+        </div>
+        {/* ------------------Display Related Product--------------------- */}
+        <div className="">
+          <RelatedProducts category={productData.category} subCategory={productData.subCategory}/>
         </div>
       </div>
     </div>

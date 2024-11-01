@@ -11,7 +11,7 @@ const Navbar = () => {
 
     const [visible, setVisible] = useState(false)
 
-    const {setShowSearch} = useContext(ShopContext)
+    const {setShowSearch, getCartCount} = useContext(ShopContext)
 
   return (
     <>
@@ -66,7 +66,7 @@ const Navbar = () => {
                         </div>
                         <Link to="/cart" className='relative'>
                             <IoBagOutline />
-                            <p className='absolute bottom-[-7px] right-[-7px] w-5 rounded-full bg-slate-600 leading-5 text-white text-center aspect-square text-[11px] josefin_sans'>10</p>
+                            <p className='absolute bottom-[-7px] right-[-7px] w-5 rounded-full bg-slate-600 leading-5 text-white text-center aspect-square text-[11px] josefin_sans'>{getCartCount()}</p>
                         </Link>
                     {/* ****************Responsive Icon************ */}
                         <div>
