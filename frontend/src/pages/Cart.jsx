@@ -2,10 +2,12 @@ import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import Title from '../components/Title/Title';
 import { RiDeleteBin6Line } from "react-icons/ri";
+import CartTotal from '../components/CartTotal-part/CartTotal';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
 
-  const {products, currency, cartItem, updateQuantity} = useContext(ShopContext);
+  const {products, currency, cartItem, updateQuantity,} = useContext(ShopContext);
   const [cartData, setCartData] = useState([])
 
 
@@ -49,12 +51,22 @@ const Cart = () => {
                   </div>
                 </div>  
                 <input onChange={(e)=> e.target.value === "" || e.target.value === "0" ? null : updateQuantity(item.id, item.size,Number(e.target.value)) } className='border max-w-10 sm:max-w-20 px=1 sm:px-2 py-1' type="number" min={1} defaultValue={item.puantity}/>  
-                <div className='text-[25px]'>
+                <div className='text-[25px] cursor-pointer'>
                   <RiDeleteBin6Line onClick={()=> updateQuantity(item.id,item.size,0)} />
                 </div>           
               </div>
             )
           })}
+        </div>
+        <div className="flex justify-end">
+          <div className="w-full sm:w-[450px] cursor-pointer">
+            <CartTotal/>
+            <div className="w-full">
+              <Link to="/placeOrder">
+                <button className='bg-black text-white my-8 px-8 py-3 josefin_sans text-[14px] font-normal'>PROCEED TO CHECKOUT</button>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>

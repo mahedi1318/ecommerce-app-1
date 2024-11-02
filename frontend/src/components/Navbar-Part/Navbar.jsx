@@ -52,7 +52,9 @@ const Navbar = () => {
                     <div className='flex items-center gap-4 text-[23px] font-bold'>
                         <IoSearch onClick={()=>setShowSearch(true)} className='' />
                         <div className='group relative'>
-                            <CiUser />
+                            <Link to="/login">
+                                <CiUser />
+                            </Link>
                             <div className='group-hover:block hidden absolute dropdown-menu right-0 pt-5'>
                                 <div className='flex flex-col gap-2 w-[240px] py-3 px-5 bg-slate-100 text-gray-500 rounded'>
                                     <p className='cursor-pointer josefin_sans text-[17px] font-medium hover:text-black'>My Protfolio</p>
