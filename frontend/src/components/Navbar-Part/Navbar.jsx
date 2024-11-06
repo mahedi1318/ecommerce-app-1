@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <>
-    <div className='py-5 bg-[#dbdbdb]'>
+    <div className='py-5'>
         <div className='container'>
             <div className="flex justify-between items-center">
                 {/* ****************logo************ */}
